@@ -1,0 +1,53 @@
+<!-DOCTYPE HTML-->
+<html>
+<head>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.mobile.theme-1.4.5.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" type="text/css"/>
+<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<style type="text/css">
+    #encabezado{
+        text-align: center;
+        font-size: 16px;
+        color:blue;
+        font-weight:bold;
+    }
+    #pie{
+        text-align: center;
+        font-size: 10px;
+        color:red;
+        font-weight:bold;
+    }
+</style>
+</head>
+<body>
+<div data-role="page" id="Principal">
+            <div data-role="header">
+                   <h1> Mi aplicación 1</h1>
+            </div>
+            <div data-role="content">
+                   <p id="encabezado">Transiciones</p>
+                   <a href="#Segunda" data-role="button" data-transition="slideup">Transicion hacia arriba</a>
+                   <a href="#Segunda" data-role="button" data-transition="slidedown">Transicion hacia abajo</a>
+                   <a href="#Segunda" data-role="button" data-transition="top">Transicion Top</a>
+                   <a href="#Segunda" data-role="button" data-transition="flip">Transicion Flip</a>
+            </div>
+            <div data-role="footer">
+                   <p id="pie">Pie de pagina</p>
+            </div>
+</div>
+<div data-role="page" id="Segunda">
+            <div data-role="header">
+                   <h1> Mi aplicación 2</h1>
+            </div>
+            <div data-role="content">
+                   <p>Hola mundo</p>
+            </div>
+            <div data-role="footer">
+                   <p>Pie de pagina</p>
+            </div>
+</div>
+</body>
+</html>
